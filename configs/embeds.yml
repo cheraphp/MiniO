@@ -1,0 +1,262 @@
+# ________________________________________________
+#
+#        MINIO EMBEDS FILE
+#
+# Embed Colors Accept Color Names
+# (Red, GREEN etc.) and HEX (#f1f1f1, #dddddd etc.)
+#
+# For new Line use \n
+#
+# ________________________________________________
+
+# Title of every Embed
+title: "MiniO - voiddevs.org"
+# Title of Suggestion Embed
+suggestion_title: "Suggestion"
+# Footer of Every Embed
+footer: "MiniO - voiddevs.org"
+# Embed Color for Errors or Negative Responses
+error_color: "Red"
+# Embed Color for Success or Positive Responses
+success_color: "Green"
+# Embed Color for other situations
+general_color: "Yellow"
+# Suggestions Embed
+suggestion:
+  title: "New Suggestion"
+  color: "Yellow"
+  # Valid Placeholders are <author>, <suggestions>, <date>, <yes_vote>, <no_vote>
+  description: "New Suggestion have been submitted."
+  footer: true 
+  thumbnail: true
+  # Valid Placeholders are <author>, <suggestions>, <date>, <yes_vote>, <no_vote>
+  # To use just description set to fields: []
+  fields:
+    - title: "Author"
+      description: "<author>"
+    - title: "Suggestion"
+      description: "<suggestion>"
+    - title: "Upvotes"
+      description: "<yes_vote>"
+    - title: "Downvotes"
+      description: "<no_vote>"
+# Calculate Embed
+calculate:
+  title: "Calculator"
+  color: "Yellow"
+  # Valid Placeholders are <expression>, <result>
+  description: "Your Math Problem have been calculated."
+  footer: true 
+  thumbnail: false
+  # Valid Placeholders are <expression>, <result>
+  # To use just description set to fields: []
+  fields:
+    - title: "Expression"
+      description: "<expression>"
+    - title: "Result"
+      description: "```js\n<result>\n```"
+userInfo:
+  title: "User Info"
+  # Valid Placeholders are <user>, <joinedAt>, <createdAt>, <tag>, <discriminator>, <username>, <id> 
+  description: "Informations about <user>."
+  color: "#4CAAFF"
+  footer: true
+  thumbnail: true
+  # Valid Placeholders are <user>, <joinedAt>, <createdAt>, <tag>, <discriminator>, <username>, <id> 
+  # To use just description set to fields: []
+  fields:
+    - title: "Username"
+      description: "<username>"
+    - title: "Discriminator"
+      description: "<discriminator>"
+    - title: "Joined At"
+      description: "<joinedAt>"
+    - title: "Created At"
+      description: "<createdAt>"
+roleInfo:
+  title: "Role Info"
+  # Valid Placeholders are <role>, <id>, <mentionable>, <createdAt>, <color>, <position>, <permissions>
+  description: "Informations about <role>."
+  color: "#4CAAFF"
+  footer: true
+  # Role Icon Thumbnail (If exists)
+  thumbnail: true
+  # Valid Placeholders are <role>, <id>, <mentionable>, <createdAt>, <color>, <position>, <permissions> 
+  # To use just description set to fields: []
+  fields:
+    - title: "Role ID"
+      description: "<id>"
+    - title: "Created At"
+      description: "<createdAt>"
+    - title: "Color"
+      description: "<color>"
+    - title: "Position"
+      description: "<position>"
+    - title: "Permissions"
+      description: "<permissions>"
+# ServerInfo Embed
+serverInfo:
+  title: "Server Info"
+  # Valid Placeholders are <name>, <id>, <createdAt>, <channels>, <roles>, <bots>, <members>, <online> 
+  description: "Informations Server <name>."
+  color: "#4CAAFF"
+  footer: true
+  thumbnail: true
+  # Valid Placeholders are <name>, <id>, <createdAt>, <channels>, <roles>, <bots>, <members>, <online> 
+  # To use just description set to fields: []
+  fields:
+    - title: "Guild Name"
+      description: "<name>"
+    - title: "ID"
+      description: "<id>"
+    - title: "Creation Date"
+      description: "<createdAt>"
+    - title: "Member Count"
+      description: "<members>"
+# Invites Joined Logging Embed
+invitesJoined:
+  title: "User Joined"
+  # Valid Placeholders <createdAt>, <joinsInvites>, <regularInvites>, <leavesInvites>,
+  # <totalInvites>, <invitedBy>, <user>, <members>.
+  description: "<user> has joined, invited by <invitedBy>\n<invitedBy> now has <regularInvites> regular invites."
+  color: "Yellow"
+  footer: true
+# Invites Joined Left Embed
+invitesLeft:
+  title: "User Left"
+  # Valid Placeholders <createdAt>, <joinsInvites>, <regularInvites>, <leavesInvites>,
+  # <totalInvites>, <invitedBy>, <user>, <members>.
+  description: "<user> has left, invited by <invitedBy>\n<invitedBy> now has <regularInvites> regular invites."
+  color: "Yellow"
+  footer: true
+welcome:
+  title: "New Member"
+  # Valid Placeholders are <user>, <members>, <inviter>, <createdAt>
+  description: "<user> has joined server, we now have <members> members.\nInvited by: <inviter>"
+  color: "#4CAAFF"
+  footer: true
+  thumbnail: true
+# Leave Message
+leave:
+  title: "Member Left"
+  # Valid Placeholders are <user>, <members>, <inviter>, <createdAt>
+  description: "<user> has left server, we now have <members> members.\nInvited by: <inviter>"
+  color: "#4CAAFF"
+  footer: true
+  thumbnail: true
+# 8ball Embed
+eightball:
+  title: "8ball"
+  # Question Field
+  question: "Question"
+  # Answer Field
+  answer: "Answer"
+  color: "#4CAAFF"
+  footer: true
+  thumbnail: true
+# Backup Embed
+backup:
+  load:
+    title: "Load Backup"
+    # Question Field
+    description: "Choose option to apply."
+    # Answer Field
+    buttons:
+      all: "Load All"
+      roles: "Load Roles"
+      channels: "Load Channels"
+    color: "#4CAAFF"
+    footer: true
+# Help Menu Embed
+help:
+  title: "🚀 · Help Menu"
+  # Valid Placeholders are <commandsCount>, <prefix>
+  description: "To view Commands of specific Category use Select Menu\n\n>>> 1. Member Commands\n2. Utility\n3. Moderation\n4. Music\n5. Fun\n6. Giveaway"
+  color: "#4CAAFF"
+  footer: true
+  thumbnail: true
+  # Valid Placeholders are <commandsCount>, <prefix>
+  # To use just description set to fields: []
+  fields: []
+# Command Info Embed
+commandInfo:
+  title: "🚀 · Informations About Command"
+  # Valid Placeholders are <name>, <description>, <usage>, <category> & <prefix>
+  description: ""
+  color: "#4CAAFF"
+  footer: true
+  thumbnail: true
+  # Valid Placeholders are <name>, <description>, <usage>, <category> & <prefix>
+  # To use just description set to fields: []
+  fields:
+    - title: "Command Name"
+      description: "`<name>`"
+    - title: "Description"
+      description: "`<description>`"
+    - title: "Usage"
+      description: "`<prefix><usage>`"
+    - title: "Category"
+      description: "`<category>`"
+# Level Embed
+level:
+  title: "Level"
+  # Valid Placeholders are <user>, <level>, <rank> (Leaderboard), <percentage>, <xp>, <xpNeeded> & <progress> (bar)
+  description: "**User:** <user>\n**Level:** <level>\n**Rank:** #<rank>\n**Progress:** <progress> `(<percentage>%)`"
+  color: "#4CAAFF"
+  footer: true
+  thumbnail: false
+  # Valid Placeholders are <user>, <level>, <rank> (Leaderboard), <percentage>, <xp>, <xpNeeded> & <progress> (bar)
+  # To use just description set to fields: []
+  fields: []
+# Giveaway Embed
+giveaway:
+  title: "Giveaway"
+  # Valid Placeholders <reward>, <hoster>, <remaining>, <winnerCount>, <requirements>,
+  # <winners> (just for endDescription)
+  description: "**Reward:** <reward>\n**Hosted by:** <hoster>\n**Remaining Time:** <remaining>\n**Number of Winners:** <winnerCount><requirements>"
+  endDescription: "**Reward:** <reward>\n**Hosted by:** <hoster>\n**Remaining Time:** <remaining>\n**Number of Winners:** <winnerCount>\n**Winners:** <winners><requirements>"
+  color: "Yellow"
+  footer: true
+# Giveaway Confirm Embed
+gwConfirm:
+  title: "Giveaway Setup"
+  # Valid Placeholders <joinsInvites>, <leavesInvites>, <regularInvites>, <inviter>, <rank>, <history>, <user>
+  description: "Are this Giveaway Details Good? Confirm by clicking Button.\nDuration: <duration>\nChannel: <channel>\nWinners: <winners>\nMessages: <messages>\nInvites: <invites>\nPrize: <prize>"
+  color: "Yellow"
+  footer: true
+# Verification Embed
+verification:
+  title: "Verification Required"
+  fail_title: "Verification Failed"
+  success_title: "Verification Success"
+  description: ">>> In order to gain access to the Server you'll need to verify yourself first.\n\n**Select option from Dropdown which has value ||<code>||, you have 60 seconds**."
+  fail_description: ">>> You didn't pass verification in time. Use `-verify` in DM to restart Verification (once per 2 minutes)."
+  success_description: ">>> You have been verified successfully, enjoy."
+  color: "Yellow"
+  footer: true
+autoMod:
+  caps:
+    title: "Anti Caps-Lock"
+    description: "Hey <user>, you cannot use that much of CapsLock in message."
+    footer: true
+    color: "Red"
+  links:
+    title: "Anti Links"
+    description: "Hey <user>, you cannot send links!"
+    footer: true
+    color: "Red"
+  bad_words:
+    title: "Bad Words"
+    description: "Hey <user>, don't swear, watch your language!"
+    footer: true
+    color: "Red"
+  invites:
+    title: "Anti Invites"
+    description: "Hey <user>, you cannot post server invites here!"
+    footer: true
+    color: "Red"
+  spam:
+    title: "Anti Spam"
+    description: "Hey <user>, please slow down, you're sending messages too fast!"
+    footer: true
+    color: "Red"

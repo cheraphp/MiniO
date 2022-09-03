@@ -1,0 +1,432 @@
+# ________________________________________________
+#
+#         MINIO CONFIGURATION FILE
+#
+# Here you can customise Bot's embeds, messages,
+# channels etc.
+#
+# ________________________________________________
+
+version: "1.1.5" # DO NOT TOUCH THIS!
+
+# ____________________________
+#
+# GENERAL OPTIONS
+# ____________________________
+
+general:
+  # Name of the Bot
+  name: "MiniO"
+  # Bot's Prefix
+  prefix: "+"
+  # Bot Token obtained from Discord Developer Portal
+  token: "Bot Token Here"
+  # ID of User who is gonna have access to EVAL Command
+  # Example:
+  #
+  # eval:
+  #   - "1234"
+  #
+  # If you don't want any, just change to eval: []
+  eval: []
+  # Currency Symbol
+  currency_symbol: "$"
+  # Type of Channel for Server Statistics
+  # Can be: GUILD_TEXT, GUILD_VOICE
+  stats_type: "GUILD_VOICE"
+  # ID of Guild in which Bot will be used
+  # Used for Custom Status Stats and similar
+  guild: ""
+  # Help Categories
+  help:
+    # Order cannot be changed
+    list:
+      # Title for Select Menu Option
+      - name: "Main Menu"
+        # Emoji for Select Menu
+        emoji: "❓"
+        # Help Category, do not change.
+        category: "main_menu"
+      - name: "Member"
+        emoji: "👨"
+        category: "member"
+      - name: "Economy"
+        emoji: "💵"
+        category: "economy"
+      - name: "Utility"
+        emoji: "🔧"
+        category: "utility"
+      - name: "Moderation"
+        emoji: "🔨"
+        category: "moderation"
+      - name: "Music"
+        emoji: "🎵"
+        category: "music"
+      - name: "Fun"
+        emoji: "⚽"
+        category: "fun"
+      - name: "Giveaway"
+        emoji: "🎁"
+        category: "giveaway"
+      - name: "Administration"
+        emoji: "🛡"
+        category: "administration"
+  # Remove Command Message after Sent
+  remove_command: false
+  # Whether to Register Slash Commands
+  slash: true
+  # Is Suggestion Decision (Accept, Deny, Delete) Option Enabled
+  sugg_decision: true
+
+# ____________________________
+#
+# ADDONS CONFIGURATION
+# ____________________________
+
+addons:
+  # Folder Name of Addon to Disable
+  disabled: ["example"]
+
+# ____________________________
+#
+# PLUGINS CONFIGURATION
+# ____________________________
+
+plugins:
+  general:
+    # Number of Stars required for Starboard
+    starboard: 1
+  leveling:
+    enabled: true
+    # Cooldown for XP (in seconds)
+    cooldown: 35
+  logging:
+    enabled: true
+    # List of Events to Log
+    # Valid Moderation Events: BAN, TEMPBAN, MUTE, UNBAN, UNMUTE, WARN, UNWARN, KICK
+    # Valid Discord Events: CHANNEL_CREATE, CHANNEL_DELETE, GUILD_MEMBER_UPDATE, GUILD_UPDATE, ROLE_CREATE,
+    # ROLE_DELETE, ROLE_UPDATE, MESSAGE_DELETE, MESSAGE_UPDATE
+    events: []
+  welcomer:
+    enabled: true
+    # Whether Welcome Message is Enabled
+    send_message: true
+    # Type can be: EMBED or TEXT
+    type: "EMBED"
+    # Only if Type is Text
+    # Valid Placeholders are <user>, <members>, <inviter>, <createdAt>
+    message: ""
+    image_url: ""
+    # Whether to save Member's Role when they leave
+    # and to give them upon joining again
+    save_roles: true
+  leave:
+    enabled: false
+    # Whether Leave Message is Enabled
+    send_message: true
+    # Type can be: EMBED or TEXT
+    type: "EMBED"
+    # Only if Type is Text
+    # Valid Placeholders are <user>, <members>, <inviter>, <createdAt>
+    message: ""
+  verification:
+    enabled: true
+    # Role to give upon Verification
+    role_add: ""
+    # Role to remove upon Verification
+    role_remove: ""
+    # How much time Member have to verify (in seconds)
+    time: 60
+    # Channel in which to allow +verify Command (If fails DM Verification)
+    channel: ""
+  fun:
+    eightball:
+      answers: ["Yes", "Maybe", "Later", "Perhaps", "No", "Never", "Good", "Bad", "Nah"]
+  stats:
+    # Count Messages
+    messages: true
+    leaderboard:
+      # Leaderboard Format, valid Placeholders <rank>, <user>, <prefix>, <data> (amount)
+      format: "**#<rank>** <user> - <data><symbol>"
+      # Symbol for Leaderboard
+      symbol: 
+        level: " level"
+        invites: " invites"
+        messages: " messages"
+  economy:
+    enabled: true
+    jobs:
+      # Job Name - Salary
+      - "Teacher": 250
+      - "Programmer": 400
+      - "Baker": 150
+      - "Farmer": 100
+    daily:
+      random: false
+      # If random is false, how much to give
+      amount: 1500
+      # If random is true, in which range to give
+      max: 1500
+      min: 500
+    bet:
+      # Cooldown for Bet (in seconds)
+      cooldown: 60
+    shop:
+      enabled: true
+      # Format for Items
+      item_format: "`#<id>` <name> - 💵<price>\n - <description>"
+      items:
+        # Type of Item you want to sell
+        # Currently just ROLE
+        - type: "ROLE"
+          # Item Name
+          name: "Ultimate Role"
+          # Item Description
+          description: "With this purchase you will receive Ultimate Role"
+          # If type is Role, ID/Name of Role you want to give
+          role: ""
+          # Price for this item
+          price: 25000
+    # Minumum amount both user who's robbing and who's
+    # getting robbed need to have in wallet.
+    min_rob: 500
+  reaction_roles:
+    enabled: true
+    list:
+      # ID of Message on which to Create Reaction Roles
+      - id: "first"
+        # Title for Embed
+        title: "Reaction Role"
+        # Description
+        description: "React to get your role."
+        # Embed Color
+        color: "#FFFF0"
+        # Can be TEXT or EMBED
+        type: "EMBED"
+        roles:
+          - "😀": ""
+  auto_mod:
+    enabled: true
+    # List of modules enabled
+    # List of modules: CAPS_LOCK, BAD_WORDS, ANTI_LINK, ANTI_INVITE, ANTI_SPAM
+    modules: []
+    # List of bad words
+    bad_words: ["suck", "ass", "idiot"]
+    # Links Whitelist
+    links_wl: ["https://google.com", "https://vcodes.xyz"]
+    # Channels in which AutoModeration is disabled
+    channels: 
+      caps: []
+      links: []
+      invites: []
+      bad_words: []
+      spam: []
+    # AutoMod Timeout duration (in seconds)
+    timeout: 600
+    # How to Punish those who activate AutoMod
+    # Valid Punishments: TIMEOUT (With Message, Delete & Member Timeout), DELETE (Without Message), WARN (Without Deleting), WARN_DELETE (With Message)
+    punishments:
+      caps: 
+        type: "WARN_DELETE"
+        # Duration of Timeout (in seconds) if Punishment is Timeout
+        timeout: "600"
+      links: 
+        type: "WARN_DELETE"
+        # Duration of Timeout (in seconds) if Punishment is Timeout
+        timeout: "600"
+      invites: 
+        type: "WARN_DELETE"
+        # Duration of Timeout (in seconds) if Punishment is Timeout
+        timeout: "600"
+      bad_words: 
+        type: "WARN_DELETE"
+        # Duration of Timeout (in seconds) if Punishment is Timeout
+        timeout: "600"
+      spam: 
+        type: "WARN_DELETE"
+        # Duration of Timeout (in seconds) if Punishment is Timeout
+        timeout: "600"
+  birthday:
+    announce_birthdays: true
+
+# ____________________________
+#
+# CHANNELS CONFIGURATION
+#
+# All of Channels are required
+# ____________________________
+
+channels:
+  # ID/Name of Channel in which to send new Suggestions
+  suggestions: ""
+  # ID/Name of Channel in which to send Embed for Suggestion Decision
+  sugg_decision: ""
+  # ID/Name of Channel in which to send Accepted/Denied Suggestions
+  sugg_logs: ""
+  # ID/Name of Channel to send Auto Announcements
+  announce: ""
+  # ID/Name of Channel to Log Invites
+  invites: ""
+  # ID/Name of Channel to Send Starboard Messages
+  starboard: ""
+  # Temporary Voice Channels
+  temporary: 
+    # ID/Name of Category to which to move Channel once created
+    category: ""
+    # ID/Name of 'Join to Create' Channel
+    voice: ""
+    # Limit of Users by default
+    limit: 5
+  # Logging Channels
+  logging:
+    # ID/Name of Channel in which to Log Bot Stuff (Punishments and similar)
+    bot: ""
+    # ID/Name of Channel in which to Log Events
+    events: ""
+  # ID/Name of Channel in which to send Welcome Messages
+  welcome: ""
+  # ID/Name of Channel in which to send Leave Messages
+  leave: ""
+  # Ignore Channels for Specific Features
+  ignore:
+    levels: []
+  # ID/Name of Channel in which to send Birthday Messages
+  birthday: ""
+
+# ____________________________
+#
+# AUTO RESPONSES
+# ____________________________
+
+autoResponse:
+  # Are Responses Enabled
+  enabled: false
+  # Embed or Normal Message 
+  # Values: EMBED, TEXT
+  type: "EMBED"
+  # List of Responses
+  list:
+    # Initiator Message - Response Message
+    "Test Message": "Test Response"
+    "Another Message": "Another Response"
+
+# ____________________________
+#
+# AUTO ANNOUNCEMENTS
+# ____________________________
+
+autoAnnounce:
+  # Are Announcements Enabled
+  enabled: false
+  # Embed or Normal Message 
+  # Values: EMBED, TEXT
+  type: "EMBED"
+  # Interval for Announcements (in seconds)
+  interval: 60
+  # List of Announcements
+  list:
+    # Messages to Announce
+    - "First Message"
+    - "Second Message"
+
+# ____________________________
+#
+# ROLES CONFIGURATION
+# ____________________________
+
+roles:
+  # Join Roles
+  join: 
+    enabled: true
+    # List of Roles to give to Member on Join
+    # Example:
+    #
+    # list:
+    #   - "1234"
+    #
+    # If you don't want any, just change to list: []
+    list: []
+  # Leveling Roles
+  leveling:
+    enabled: true
+    # List of Roles to give to Member on LevelUP
+    # Example:
+    #
+    # list:
+    #   - "1234"
+    #
+    # If you don't want any, just change to list: []
+    list: []
+  # Roles which can bypass specific stuff
+  # Format is same as for above roles
+  bypass:
+    # Roles which can bypass Command Cooldown
+    cooldown: []
+    # Roles which can bypass Command Permissions
+    permission: []
+    # Roles which can bypass Anti Link AutoModeration
+    links: []
+    # Roles which can bypass Anti CapsLock AutoModeration
+    caps_lock: []
+    # Roles which can bypass Bad Words AutoModeration
+    bad_words: []
+    # Roles which can bypass Anti Spam AutoModeration
+    spam: []
+    # Roles which can bypass AntiInvites AutoModeration
+    invites: []
+    # Roles which can bypass Giveaway Requirements
+    giveaway: []
+
+# ____________________________
+#
+# CUSTOM STATUS CONFIGURATION
+# ____________________________
+
+status:
+  # Can be Playing, Listening, Watching and Competing
+  type: "Watching"
+  # Random Messages in Custom Status, changing every x minutes/hours 
+  change_random: true
+  # Interval to Change Custom Status (in seconds)
+  interval: 180 # 3 minutes, don't go below that
+  # Message which is displayed in Custom Status if change_random = false
+  message: "MiniO - voiddevs.org"
+  # List of Custom Status's if change_random = true
+  # Valid Placeholders: <members>, <channels>, <prefix>
+  messages:
+    - "<members> total members"
+    - "<prefix>help for list of commands"
+
+# ____________________________
+#
+# EMOJIS CONFIGURATION
+# ____________________________
+
+emojis:
+  # Emojis added to new Suggestions
+  yes_emoji: "👍"
+  no_emoji: "👎"
+  # Next Button Emoji
+  next: "▶"
+  # Previous Button Emoji
+  previous: "◀"
+  backup:
+    load_all: "✅"
+    load_roles: "🎭"
+    load_channels: "📻"
+  giveaway:
+    # Confirm Start Giveaway Button Emoji
+    start: "🎉"
+    # Cancel Start Giveaway Button Emoji
+    cancel: "❌"
+    # Emoji which to React to Enter Giveaway
+    react: "🎊"
+  leaderboard: 
+    # Next Page
+    next: "➡️"
+    previous: "⬅️"
+
+# _____________________________________________________________
+#
+#                     END OF CONFIGURATION
+# _____________________________________________________________

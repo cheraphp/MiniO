@@ -1,0 +1,779 @@
+# ________________________________________________
+#
+#       MINIO COMMANDS FILE
+#
+# Here you can commands configuration like required role,
+# description, aliases and similar.
+#
+# ________________________________________________
+
+# Command Name
+ping:
+  # Role Required to run Command, leave empty for none
+  roles: []
+  # Command Aliases, leave [] for none,
+  # Example:
+  # aliases: ["botping"]
+  aliases: []
+  # Discord Permission Required to run Command, leave [] for none
+  # Example:
+  # permissions: ["Administrator"]
+  permissions: []
+  # Command Description
+  description: "Ping Bot"
+  # Command Usage
+  usage: "ping"
+  # Whether Response of Command is only visible to User who run command (Only Slash Commands!)
+  # Not Present on All Commands!
+  ephemeral: false
+  # Cooldown in Seconds
+  cooldown: 0
+  # Is Command Enabled
+  enabled: true
+help:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View Commands"
+  usage: "help [Category/Command]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+id:
+  roles: []
+  aliases: ["getid"]
+  permissions: ["ManageMessages"]
+  description: "Get Channel/User/Role ID"
+  usage: "id [Channel/@User/Role]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+suggest:
+  roles: []
+  aliases: ["suggestion"]
+  permissions: []
+  description: "Create Suggestion"
+  usage: "suggest [Suggestion]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+counters:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Create Stats Counters"
+  usage: "counters"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+eval:
+  roles: []
+  aliases: []
+  permissions: ["Administrator"]
+  description: "Evaulate JS Code"
+  usage: "eval [JS Code]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+ban:
+  roles: []
+  aliases: []
+  permissions: ["BAN_MEMBERS"]
+  description: "Ban Member"
+  usage: "ban [User] [Reason]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+infractions:
+  roles: []
+  aliases: []
+  permissions: ["ManageMessages"]
+  description: "View User's Infractions"
+  usage: "infractions [@User]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+clear:
+  roles: []
+  aliases: []
+  permissions: ["ManageMessages"]
+  description: "Purge Messages from Channel"
+  usage: "clear [1-100]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+kick:
+  roles: []
+  aliases: []
+  permissions: ["KICK_MEMBERS"]
+  description: "Kick User from Server"
+  usage: "kick [@User] [Reason]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+mute:
+  roles: []
+  aliases: []
+  permissions: ["MODERATE_MEMBERS"]
+  description: "Mute User"
+  usage: "mute [@User] [Duration] [Reason]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+tempban:
+  roles: []
+  aliases: []
+  permissions: ["BAN_MEMBERS"]
+  description: "Temporary Ban User"
+  usage: "tempban [@User] [Duration] [Reason]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+unban:
+  roles: []
+  aliases: []
+  permissions: ["BAN_MEMBERS"]
+  description: "Unban User"
+  usage: "unban [User ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+unmute:
+  roles: []
+  aliases: []
+  permissions: ["MODERATE_MEMBERS"]
+  description: "UnMute User"
+  usage: "unmute [@User]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+unwarn:
+  roles: []
+  aliases: []
+  permissions: ["KICK_MEMBERS"]
+  description: "UnWarn User"
+  usage: "unwarn [@User]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+warn:
+  roles: []
+  aliases: []
+  permissions: ["KICK_MEMBERS"]
+  description: "Warn User"
+  usage: "warn [@User] [Reason]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+loop:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Loop song or queue"
+  usage: "loop [Song/Queue/Off]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+nowplaying:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View song/playlist currently playing"
+  usage: "nowplaying"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+pause:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Pause Song"
+  usage: "pause"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+play:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Play song/playlist"
+  usage: "play [Song/Playlist Name/Link]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+queue:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View queued songs"
+  usage: "queue"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+removesong:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Remove Song from Queue"
+  usage: "removesong [Queue ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+resume:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Resume Song"
+  usage: "resume"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+shuffle:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Shuffle Queue"
+  usage: "shuffle"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+skip:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Skip Song"
+  usage: "skin"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+stop:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Stop Music"
+  usage: "stop"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+volume:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Change Music Volume"
+  usage: "volume [1-100]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+avatar:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View User's Avatar"
+  usage: "avatar [@User]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+eightball:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Ask Question"
+  usage: "8ball [Quesiton]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+dog:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Get random Dog Image"
+  usage: "dog"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+cat:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Get random Cat Image"
+  usage: "cat"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+duck:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Get random Duck Image"
+  usage: "duck"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+invites:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View User's Invites"
+  usage: "invites [@User]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+invitestop:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View Invites Leaderboard"
+  usage: "invitestop"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+serverinfo:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Information about Server"
+  usage: "serverinfo"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+userinfo:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Inforamtion about User"
+  usage: "userinfo [@User]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+roleinfo:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Inforamtion about Role"
+  usage: "roleinfo [@Role]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+savebackup:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Save Backup of Server"
+  usage: "savebackup"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+loadbackup:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Load Server Backup"
+  usage: "loadbackup [Backup ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+gcreate:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Create Giveaway via Interactive Menu"
+  usage: "gcreate"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+gend:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "End Giveaway"
+  usage: "gend [Giveaway ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+gstart:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Start Giveaway"
+  usage: "gstart [Duration] [#Channel] [Winners Count] [Messages Req.] [Invites Req.] [Prize]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+greroll:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "ReRoll Giveaway"
+  usage: "greroll [Giveaway ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+gedit:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Edit Giveaway"
+  usage: "gedit [Giveaway ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+tweet:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Tweet Something as someone"
+  usage: "tweet [Author] [Tweet Text]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+messagestop:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View Messages Leaderboard"
+  usage: "messagestop"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+addlevel:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Add Level to User"
+  usage: "addlevel [@User] [Levels]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+addmoney:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Add Money to User"
+  usage: "addmoney [@User] [Wallet/Bank] [Amount]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+addxp:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Add XP to User"
+  usage: "addxp [@User] [XP]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+removelevel:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Remove Level from User"
+  usage: "removelevel [@User] [Levels]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+removexp:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Remove XP from User"
+  usage: "removexp [@User] [XP]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+removemoney:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Remove Money from User"
+  usage: "removemoney [@User] [Wallet/Bank] [Amount]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+rps:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Play Rock, Paper, Scissors against other users"
+  usage: "rps [@User]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+remindme:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Make reminder for something"
+  usage: "remindme [add/cancel/list] [time/reminder id (if canceling)] [Reason]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+addbirthday:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Set or Reset your Birthday"
+  usage: "addbirthday [Date, ex. 17 Feb 2000]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+birthdayscoming:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "List of Birthdays coming this month"
+  usage: "birthdayscoming"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+work:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Work and earn salary"
+  usage: "work"
+  ephemeral: false
+  cooldown: 60
+  enabled: true
+bet:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Bet your money"
+  usage: "bet [Amount]"
+  ephemeral: false
+  cooldown: 15
+  enabled: true
+slots:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Play Slots"
+  usage: "slots [Amount]"
+  ephemeral: false
+  cooldown: 15
+  enabled: true
+rob:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Rob other User"
+  usage: "rob [@User]"
+  ephemeral: false
+  cooldown: 120
+  enabled: true
+balance:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View your or someones balance"
+  usage: "balance [@User]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+shop:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View shop items"
+  usage: "shop"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+buy:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Buy item from Shop"
+  usage: "buy [Item ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+daily:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Get Daily Reward"
+  usage: "daily"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+pay:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Pay someone money"
+  usage: "pay [@User] [Amount]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+baltop:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View Balance Leaderboard"
+  usage: "baltop"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+leveltop:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View Levels Leaderboard"
+  usage: "leveltop"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+deposit:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Deposit Money to bank"
+  usage: "deposit [Amount]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+withdraw:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Withdraw Money from bank"
+  usage: "withdraw [Amount]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+slowmode:
+  roles: []
+  aliases: []
+  permissions: ["ManageMessages"]
+  description: "Set Channel's slowmode"
+  usage: "slowmode [Seconds]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+addrole:
+  roles: []
+  aliases: []
+  permissions: ["ManageRoles"]
+  description: "Add Role to Member"
+  usage: "addrole [@User] [@Role]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+removerole:
+  roles: []
+  aliases: []
+  permissions: ["ManageRoles"]
+  description: "Remove Role from Member"
+  usage: "removerole [@User] [@Role]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+embed:
+  roles: []
+  aliases: []
+  permissions: ["ManageChannels"]
+  description: "Send Embed to Channel"
+  # First three parameters are optional, description is required
+  usage: "embed [-t Title] [-c #HEX Color] [-i Thumbnail URL] [Description]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+level:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View your or someones level"
+  usage: "level [@User]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+reactionroles:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Create Reaction Roles"
+  usage: "reactionroles"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+calculate:
+  roles: []
+  aliases: []
+  cooldown: 0
+  permissions: []
+  description: "Calculate Math Expression"
+  usage: "calculate [Expression]"
+  ephemeral: false
+  enabled: true
+getproduct:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Download Product using ID"
+  usage: "getproduct [Product ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+products:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Get list of products available"
+  usage: "products"
+  cooldown: 0
+  enabled: true
+setpriority:
+  roles: []
+  aliases: []
+  permissions: ["ManageGuild"]
+  description: "Set Priority for Ticket Channel"
+  usage: "setpriority [#Channel] [low / normal / high / urgent]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+prioritylist:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "List of Tickets with High or Urgent Priorities"
+  usage: "prioritylist"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+sellixconnect:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Verify yourself as Sellix.io Customer"
+  usage: "sellixconnect [Order ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+sellixlicense:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Get Informations About Sellix Licence (Order ID)"
+  usage: "sellixlicence [Order ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+sellixproduct:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "View Sellix Product Details"
+  usage: "sellixproduct [Product Unique ID]"
+  ephemeral: false
+  cooldown: 0
+  enabled: true
+verify:
+  roles: []
+  aliases: []
+  permissions: []
+  description: "Start Verification process again"
+  usage: "verify"
+  ephemeral: false
+  cooldown: 1200
+  enabled: true
