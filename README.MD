@@ -12,4 +12,5 @@ How to setup?
  Feel free to give me a feedback.
 -
 ## 💨 Quick Start
-[See The Replit Page!]([https://repl.it/badge/github/minio/https://repl.it/github/minio](https://replit.com/@themertdc/MiniO))<br>
+
+https://replit.com/@themertdc/MiniO
