@@ -10,7 +10,6 @@ How to setup?
  Your bot is ready!
  
  Feel free to give me a feedback.
-
-
+-
 ## 💨 Quick Start
-[![Run on Replit](https://repl.it/badge/github/minio/https://repl.it/github/minio)<br>
+[See The Replit Page!]([https://repl.it/badge/github/minio/https://repl.it/github/minio](https://replit.com/@themertdc/MiniO))<br>
