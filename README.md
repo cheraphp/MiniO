@@ -4,7 +4,7 @@
 * İlk olarak bilgisayarına [Node JS](https://nodejs.org/en/) indir.
 * Bu projeyi zip halinde indir.
 * Herhangi bir klasöre zipi çıkart.
-* /config'in içinde bulunan dosyaların hepsini eksiksiz doldur.
+* /configs'in içinde bulunan dosyaların hepsini eksiksiz doldur.
 * Sonra klasörün içerisinde bir `powershell` ya da `cmd` penceresi aç.
 * ```npm install``` yazarak tüm modülleri kur.
 * Kurulum bittikten sonra ```npm start``` yaz ve botu başlat.
