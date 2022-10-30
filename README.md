@@ -12,7 +12,7 @@
 Tada 🎉. Artık kendine özel MiniO botun hazır! dilediğin gibi kullanabilirsin.
 
 # Not
-Her hangi bir hata bulursanız veya sorunuz varsa bana ulaşmaktan çekinmeyin.
+Herhangi bir hata bulursanız veya sorunuz varsa bana ulaşmaktan çekinmeyin.
 
 # Görseller:
 ![yardım komutu](https://cdn.discordapp.com/attachments/972581981307174944/1036270931942846564/unknown.png)
