@@ -1,5 +1,7 @@
 # MiniO
 
+ # **⚠️ Yeni MiniO Güncellemesi, Yakında!**<br>
+
 # Kurulum
 * İlk olarak bilgisayarına [Node JS](https://nodejs.org/en/) indir.
 * Bu projeyi zip halinde indir.
